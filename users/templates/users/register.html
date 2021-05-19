@@ -1,0 +1,18 @@
+{% extends "users\base.html" %}
+{% block body %}
+
+
+<form action="{% url 'users:register' %}" method="POST" id="registrationform">
+{% csrf_token %}
+<div class="regdiv"><h3>Register</h3></div>
+<div class="regdiv"><label for="username" class="title">username:</label>
+ <input type="username" name="username" /></div>
+ <div class="regdiv"><label for="email" class="title">email:</label>
+<input type="email" name="email" /></div>
+<div class="regdiv"><label for="password" class="title">password:</label>
+<input type="password" name="password" /></p></div>
+<div class="regdiv"><label for="confirm password" class="title">confirm password:</label>
+<input type="password" name="confirm password"></p></div>
+<div class="regdiv"><input type="submit" value="register" id="submit"></div>
+</form>
+{% endblock %}

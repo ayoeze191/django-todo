@@ -1,0 +1,53 @@
+
+.addiv {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(123, 123, 219);
+    border-collapse: collapse;
+}
+
+
+#addform {
+    padding-top: 90px;
+    margin-left: 20px;
+
+}
+
+input {
+    width: 70%;
+    height: 30px;
+}
+
+
+.addsub {
+    width: 25%;
+    height: 35px;
+    font-size: large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.tasks {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: azure;
+}
+
+.del {
+    float: right;
+}
+h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-family:cursive;
+}
+
+.word {
+    position: absolute;
+    margin-left: 600px;
+    text-transform: capitalize;
+    color: white;
+    margin-top: 45px;
+    font-family: cursive;
+
+}

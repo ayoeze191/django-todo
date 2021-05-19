@@ -1,0 +1,13 @@
+{% extends 'todo\base.html' %}
+
+{% block body %}
+{% for task in tasks %}
+<div class="tasks">{{ task }}
+    <a href="{% url 'todo:delete' task.id %}"><button class="del">delete</button></a>
+
+{% empty %}
+<h1>try adding task</h1>
+{% endfor %}</div>
+
+
+{% endblock %}
